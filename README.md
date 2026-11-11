@@ -24,32 +24,27 @@ javac *.java
 java RobotAssistantTasks
 ```
 
-## Example
+## Screenshots
 
-```
-********** Robot Assistant Tasks **********
+### Alarm Control
+Three alarms are entered out of order. The assistant sorts them by time and shows how long is left until each one.
 
-1. Alarm Control
-2. Temperature Control
-3. Exit
+![Alarm Control](screenshots/1-alarm-control.png)
 
-Choose an option (1-3): 2
+### Temperature Control
+The preferred range is 70–75 °F and the room is 77 °F, so the assistant turns on the cooler.
 
-Please enter the Lowest preferred room temperature in the 44-90 degrees Fahrenheit range: 70
-Please enter the Highest preferred room temperature in the 44-90 degrees Fahrenheit range: 75
+![Temperature Control](screenshots/2-temperature-control.png)
 
-*******************************************************************************************
+### Alarm input checks
+Invalid menu choices, invalid yes/no answers, empty names, badly formatted times and duplicate names (in any capitalization) are all rejected.
 
-Great! The Robot Assistant is checking the current room temperature ...
-The current temperature is: 77.0 degrees Fahrenheit
+![Alarm input checks](screenshots/3-alarm-input-checks.png)
 
-Your lowest preferred temperature is: 70.0 degrees Fahrenheit
-Your highest preferred temperature is: 75.0 degrees Fahrenheit
+### Temperature input checks
+Empty input, text, out-of-range values, Java number formats such as `80f`, and a lowest temperature above the highest are all rejected.
 
-Message for Robot Assistant: Please switch on the cooler.
-
-*******************************************************************************************
-```
+![Temperature input checks](screenshots/4-temperature-input-checks.png)
 
 ## Notes
 
